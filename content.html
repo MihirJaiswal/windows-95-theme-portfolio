@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aspiring front-end junior developer passionate about creating engaging and responsive web experiences. Explore my portfolio showcasing projects, skills in HTML, CSS, and JavaScript. Ready to contribute to innovative and dynamic web development teams.">
+    <link rel="icon" href="/assets/img/web-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+   <!--  <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Federico Sánchez</title>
+</head>
+<body>
+    <div id="overlay-black"></div>
+    <div class="main-container">
+    <div style="z-index: 1;" id="ventana3" class="ventana offWindow">
+        <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
+            <span>Settings</span>
+            <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
+        </div>
+        <div id="contenido" class="settings">
+            <h2>Background</h2>
+            <p>Change your background color</p>
+            <div class="settings__colors">
+                <div class="color bg1"></div>
+                <div class="color bg2"></div>
+                <div class="color bg3"></div>
+                <div class="color bg4"></div>
+                <div class="color bg5"></div>
+                <div class="color bg6"></div>
+                <div class="color bg7"></div>
+                <div class="color bg8"></div>
+                <div class="color bg9"></div>
+                <div class="color bg10"></div>
+                <div class="color bg11"></div>
+                <div class="color bg12"></div>
+                <div class="color bg13"></div>
+                <div class="color bg14"></div>
+                <div class="color bg15"></div>
+                <div class="color bg16"></div>
+                <div class="color bg17"></div>
+                <div class="color bg18"></div>
+                <div class="color bg19"></div>
+                <div class="color bg20"></div>
+                <div class="color bg21"></div>
+                <div class="color bg22"></div>
+                <div class="color bg23"></div>
+                <div class="color bg24"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ventana2" class="ventana offWindow paint">
+        <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
+            <span>Paint</span>
+            <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
+        </div>
+        <div id="contenido">
+            <canvas id="paintCanvas" width="800" height="450"></canvas>
+            <div id="controls">
+                <input type="color" id="colorPicker" value="#000000">
+                <button class="window-button-main" id="clearButton">Clear</button>
+                <button class="window-button-main" id="downloadButton">Download</button>
+            </div>
+        </div>
+    </div>
+    <div id="ventana4" class="ventana offWindow">
+        <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
+            <span>Documents</span>
+            <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
+        </div>
+        <div id="contenido" class="documents">
+            <h2>Documents</h2>
+            <div class="projectsCards">
+                <div class="projectsCards__card">
+                    <a href="https://github.com/federicosldev/citas_react" target="_blank">
+                    <img src="/assets/img/project-patient-appointment-manager.jpg" alt="Image of the project patient appointment manager">
+                    <h3>Patient Appointment Manager</h3>
+                    <div class="projectsCards__card-logos">
+                        <img src="/assets/img/logo-react.svg" alt="logo React">
+                        <img src="/assets/img/logo-tailwind.svg" alt="logo Tailwind CSS">
+                    </div></a>
+                </div>
+                <div class="projectsCards__card">
+                    <a href="https://github.com/federicosldev/rock-paper-scissors-game" target="_blank">
+                    <img src="/assets/img/project-rock-papper-scissors.jpg" alt="Image of the project patient appointment manager">
+                    <h3>Rock Papper Scissors Game</h3>
+                    <div class="projectsCards__card-logos">
+                        <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                        <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                        <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                    </div></a>
+                </div>
+                <div class="projectsCards__card">
+                    <a href="https://github.com/federicosldev/to-do-list-javascript" target="_blank">
+                    <img src="/assets/img/project-to-do-list.jpg" alt="Image of the project patient appointment manager">
+                    <h3>To do list</h3>
+                    <div class="projectsCards__card-logos">
+                        <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                        <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                        <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                    </div></a>
+                </div>
+                <div class="projectsCards__card">
+                    <a href="https://github.com/federicosldev/advanced-pass-generator" target="_blank">
+                    <img src="/assets/img/project-advanced-password-generator.jpg" alt="Image of the project patient appointment manager">
+                    <h3>Advanced Password Generator</h3>
+                    <div class="projectsCards__card-logos">
+                        <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                        <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                        <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                    </div></a>
+                </div>
+                <div class="projectsCards__card">
+                    <a href="https://github.com/federicosldev/password-generator" target="_blank">
+                    <img src="/assets/img/project-password-generator.jpg" alt="Image of the project patient appointment manager">
+                    <h3>Password Generator</h3>
+                    <div class="projectsCards__card-logos">
+                        <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                        <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                        <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                    </div></a>
+                </div>
+                <div class="projectsCards__card">
+                    <a href="https://github.com/federicosldev/needle-clock" target="_blank">
+                    <img src="/assets/img/project-needle-clock.jpg" alt="Image of the project patient appointment manager">
+                    <h3>Needle Clock</h3>
+                    <div class="projectsCards__card-logos">
+                        <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                        <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                        <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ventana5" class="ventana tasks offWindow">
+        <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
+            <span>Tasks</span>
+            <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
+        </div>
+        <div id="contenido">
+            <h2>To do list</h2>
+            <form id="task-form">
+                <input id="createTask" type="text" placeholder="Create a new todo…">
+            </form>
+            <article>
+                <div>
+                    <ul id="taksContainer" class="taks-container"></ul>
+                    <div class="filters">
+                        <span id="remainTasks" class="remain-task">No tasks left</span>
+                        <button class="window-button-main" id="showAllTask">All</button>
+                        <button class="window-button-main" id="activeTask">Active</button>
+                        <button class="window-button-main" id="completeTask">Completed</button>
+                        <button class="window-button-main" id="deleteTask">Clear Completed</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- <div id="ventana6" class="ventana myComputer">
+        <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
+            <span>My Computer</span>
+            <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
+        </div>
+        <div id="contenido">
+            <h2>My Computer</h2>
+            <div class="card__mycomputer">
+                <div class="card__mycomputer-bg">
+                    <img class="card__mycomputer-profile" src="/assets/img/federico-sanchez-profile-img.jpg" alt="">
+                </div>
+                <div class="card__mycomputer-text">
+                    <h3>mihir</h3>
+                    <h4>jaiswalmihir</h4>
+                </div>
+                <article class="card__mycomputer-titles">
+                    <h4>ABOUT ME</h4>
+                    <h5>Junior Front End <b>Developer</b></h5>
+                    <h5>From <b>Indiaa</b><span><img style="width: 30px; margin-left: 5px;" src="/assets/img/murcia-spain.webp" alt="from murcia"></span></h5>
+                </article>
+
+                <article class="card__mycomputer-logos">
+                    <h4>Technologies</h4>
+                    <div class="card__mycomputer-skill">
+                        <div class="skill">
+                            <img src="/assets/img/logo-javascript.svg" alt="Logo JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill">
+                            <img src="/assets/img/logo-html.svg" alt="Logo HTML">
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <img src="/assets/img/logo-css.svg" alt="Logo CSS">
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <img src="/assets/img/logo-react.svg" alt="Logo React">
+                            <p>React</p>
+                        </div>
+                        <div class="skill">
+                            <img src="/assets/img/logo-tailwind.svg" alt="Logo Tailwind">
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="skill">
+                            <img src="/assets/img/logo-wordpress.svg" alt="Logo Wordpress">
+                            <p>Wordpress</p>
+                        </div>
+                        <div class="skill">
+                            <img src="/assets/img/logo-elementor.svg" alt="Logo Elementor">
+                            <p>Elementor</p>
+                        </div>
+                        <div class="skill">
+                            <img style="width: 15px;" src="/assets/img/logo-figma.svg" alt="Logo Elementor">
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card__mycomputer-socialMedia">
+                    <h4>Follow Me</h4>
+                    <div class="socialMedia">
+                        <a href="https://github.com/federicosldev" target="_blank"><img src="/assets/img/icono-github1.svg" alt="Logo Github"></a>
+                        <a href="https://www.linkedin.com/in/federico-s%C3%A1nchez-lis%C3%B3n-/" target="_blank"><img src="/assets/img/icono-linkedIn1.svg" alt="Logo Linkedin"></a>
+                        <a href="https://www.instagram.com/federicosancheez/" target="_blank"><img src="/assets/img/icono-instagram1.svg" alt="Logo Instragram"></a>
+                        <a href="https://twitter.com/Federico_mktg" target="_blank"><img src="/assets/img/icono-twitter1.svg" alt="Logo Twitter"></a>
+                    </div>
+                </article>
+
+            </div>
+            
+        </div>
+    </div> -->
+
+        <section class="navIcons">
+
+           <div class="navIcons1">
+            <div id="displayMyComputer" class="navIcons__icon">
+                <img src="/assets/img/icon-mycomputer.png" alt="icon my computer">
+                <h2>My Computer</h2>
+            </div>
+            <div id="displayDocuments" class="navIcons__icon">
+                <img src="/assets/img/icon-documents.png" alt="icon documents">
+                <h2>Documents</h2>
+            </div>
+            <div id="displayTask" class="navIcons__icon">
+                <img src="/assets/img/icon-task.png" alt="icon task">
+                <h2>Tasks</h2>
+            </div>
+            <div id="displaySettings" class="navIcons__icon">
+                <img src="/assets/img/icon-settings1.png" alt="icon settings">
+                <h2>Settings</h2>
+            </div>
+        </div>
+        
+        <div class="navIcons1">
+            <div id="displayPaint" class="navIcons__icon">
+                <img src="/assets/img/icon-paint1.png" alt="icon settings">
+                <h2>Paint</h2>
+            </div>
+        </div>
+        </section>
+   <!--  <div class="logo-fondo">
+        <img src="/assets/img/logofondo-windows.svg" alt="logo windows 95">
+    </div> -->
+    <div class="start-bar">
+		<a href="#" title="Start Menu" class="button start-button-wrapper js-start-button">
+			<div class="start-button"></div>
+		</a>
+        <div class="digitalClock">
+            <span id="hours">00</span> : <span id="minutes">00</span>
+        </div>
+	</div>
+    <script src="/js/script.js"></script>  
+</div>
+<div class="fgbg"></div>
+</body>
+</html>
