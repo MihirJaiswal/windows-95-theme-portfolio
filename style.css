@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: black;
 }
 
 .windows95 {
@@ -15,12 +17,12 @@ body {
 }
 
 .computer {
-    background-color:  #A6A6A8;;
-    border-left: 83px solid #A6A6A8; /* Windows 95 color */
-    border-right: 83px solid #A6A6A8; 
-    border-top: 25px solid #A6A6A8;
-    border-bottom: 30px solid #A6A6A8;
-    border-radius: 15px;
+    background-color:  #8f8f9b;;
+    border-left: 90px solid #8f8f9b; /* Windows 95 color */
+    border-right: 90px solid #8f8f9b; 
+    border-top: 35px solid #8f8f9b;
+    border-bottom: 35px solid #8f8f9b;
+    border-radius: 40px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 1); 
     overflow: hidden;
 }
@@ -31,7 +33,6 @@ body {
     overflow: hidden;
     border: black 2px solid;
     border-radius: 10px;
-    
 }
 
 iframe {

@@ -120,7 +120,8 @@ button {
 .startBarShowing{
   display: none;
   position:absolute;
-  top: 40%;
+  top: 50.6%;
+  /* margin-top: 100px; */
   left: 0%;
   width: 23vw;
   height: var(--start_bar_height);
@@ -128,12 +129,13 @@ button {
   box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.75);
   
 }
+
 .startBarBanner{
   position: relative;
   top: .1vh;
   left: .5vw;
   width: 3vw;
-  height: 32.4vw;
+  height: inherit;
   background-color: grey;
 }
 
@@ -148,9 +150,13 @@ button {
 }
 
 .startIcon{
-  width: 80%;
+  width: 40%;
   height: 100%;
 }
+.startIcon1{
+    width: 80%;
+    height: 100%;
+  }
 
 #seperator{
   width: 17vw;
@@ -378,7 +384,7 @@ button {
     
     
 }
-@media (width < 1200px) {
+@media (width < 1100px) {
     .logo-fondo {
         position: absolute;
         left: 150px;
@@ -733,7 +739,7 @@ canvas {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         
-        
+
     }
 }
 @media (width < 768px) {
@@ -883,7 +889,7 @@ li {
 .card__mycomputer-skill {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 10px;
     margin-top: 10px;
 }
 .skill {
@@ -897,18 +903,24 @@ li {
     border-bottom: 2px solid #000;
     padding: 0px 5px;
     gap: 5px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 900;
+    align-items: center;
 }
 .skill img {
     width: 20px;
 }
 .card__mycomputer-logos {
-    padding: 15px 0px;
+    padding: 15px 20px;
 }
 .card__mycomputer-logos h4 {
     font-size: 1.4rem;
+    font-weight: 10000;
     padding: 0;
     margin: 0;
     text-transform: uppercase;
+    color: #000;
 }
 .card__mycomputer-socialMedia {
     padding-top: 15px;
