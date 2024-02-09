@@ -16,15 +16,17 @@ body {
 
 .computer {
     background-color:  #A6A6A8;;
-    border: 25px solid #A6A6A8; /* Windows 95 color */
-    
+    border-left: 83px solid #A6A6A8; /* Windows 95 color */
+    border-right: 83px solid #A6A6A8; 
+    border-top: 25px solid #A6A6A8;
+    border-bottom: 30px solid #A6A6A8;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 1); 
     overflow: hidden;
 }
 
 .screen {
-    width: 70vw;
+    width: 60vw;
     height: 90vh;
     overflow: hidden;
     border: black 2px solid;

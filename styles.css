@@ -169,7 +169,128 @@ button {
   margin-top: 27%;
   position: relative;
 }
+/*About me section*/
+.left-infoContainer{
+    font-size: 1.5rem;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+    padding-right: 50px;
+    padding-left: 20px;
+    margin-top: 40px;
+}
 
+.left-info{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+.left-info .name-container{
+    font-size: 2rem;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.name-container .name{
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.linksabout{
+    margin-top: 30px;
+}
+
+.ulabout{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    text-decoration: underline;
+}
+
+.ulabout li{
+    color: #73519f;
+    text-decoration: underline;
+}
+
+/* right side container */
+
+.right-infoContainer{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+
+.intoabout .welcome{
+    
+    font-size: 4rem;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.intoabout .namewelcome{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-top: 2px;
+    padding: 0px 10px;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.textabout{
+    font-size: 1.3rem;
+    font-weight: 1000;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.textabout1{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 1.5rem;
+}
+.about1{
+    font-size: 1.7rem;
+    font-weight: 1000;
+    margin-bottom: 5px;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.documents__content{
+    display: flex;
+}
+
+.aboutMesec{
+    display: flex;
+}
 @media (min-width: 1024px) and (max-width: 1440px) {
     .logo-fondo {
         position: absolute;
