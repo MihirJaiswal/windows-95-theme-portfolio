@@ -300,3 +300,49 @@ changeHour = () => {
 };
 changeHour();
 setInterval(changeHour, 1000);
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Start nav bar
+  var startButton = document.getElementById('startbutton');
+  startButton.addEventListener('click', function () {
+      // Toggle start nav bar visibility
+      var startBar = document.querySelector('.startBarShowing');
+      startBar.style.display = (startBar.style.display === 'flex') ? 'none' : 'flex';
+  });
+
+  // Close button
+  var closeButton = document.querySelector('.close');
+  closeButton.addEventListener('click', function () {
+      // Hide the parent element of the close button
+      this.parentNode.style.display = 'none';
+  });
+
+  // Make ErrorMessage draggable
+  makeDraggable(document.getElementById('ErrorMessage'));
+});
+
+// Function to make an element draggable
+function makeDraggable(element) {
+  var isDragging = false;
+  var offset = { x: 0, y: 0 };
+
+  element.addEventListener('mousedown', function (event) {
+      isDragging = true;
+
+      offset.x = event.clientX - element.getBoundingClientRect().left;
+      offset.y = event.clientY - element.getBoundingClientRect().top;
+  });
+
+  document.addEventListener('mousemove', function (event) {
+      if (isDragging) {
+          element.style.left = event.clientX - offset.x + 'px';
+          element.style.top = event.clientY - offset.y + 'px';
+      }
+  });
+
+  document.addEventListener('mouseup', function () {
+      isDragging = false;
+  });
+}
