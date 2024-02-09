@@ -284,6 +284,39 @@ button {
     color: black;
 }
 
+.aboutimg{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.imgspan{
+   font-size: 1rem;
+}
+.darkFont{
+    font-size: 1.1rem;
+    font-weight:10000;
+
+}
+.aboutmesec2{
+    display: flex;
+    margin-top: 40px;
+}
+.balance{
+    display: flex;
+    flex-direction: column;
+    height: 29vh;
+}
+
+.hobyimg{
+    margin-left: 20px;
+}
+
 .documents__content{
     display: flex;
 }
