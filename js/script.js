@@ -346,3 +346,36 @@ function makeDraggable(element) {
       isDragging = false;
   });
 }
+
+
+const about = document.querySelector('#aboutId');
+const skills = document.querySelector('#skillsId');
+const projects = document.querySelector('#projectId');
+const aboutpage = document.querySelector('.right-infoContainer')
+const skillpage = document.querySelector('.skilldiv')
+const projectpage = document.querySelector('.projectkiclass')
+
+document.addEventListener('click', function (event) {
+  if (event.target === about) {
+    aboutpage.style.display = 'block';
+    skillpage.style.display = 'none';
+    projectpage.style.display = 'none';
+    about.style.color = 'blue';
+    skills.style.color = 'purple';
+    projects.style.color = 'purple';
+  } else if (event.target === skills) {
+    skillpage.style.display = 'block';
+    aboutpage.style.display = 'none';
+    projectpage.style.display = 'none';
+    skills.style.color = 'blue';
+    about.style.color = 'purple';
+    projects.style.color = 'purple';
+  } else if (event.target === projects) {
+    projectpage.style.display = 'block';
+    skillpage.style.display = 'none';
+    aboutpage.style.display = 'none';
+    projects.style.color = 'blue';
+    skills.style.color = 'purple';
+    about.style.color = 'purple';
+  }
+})

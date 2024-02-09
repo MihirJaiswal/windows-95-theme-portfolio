@@ -66,14 +66,14 @@
             </div>
         </div>
     </div>
-    <div id="ventana4" class="ventana offWindow">
+    <div id="ventana4" class="ventana">
         <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
             <span>Documents</span>
             <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
         </div>
         <div id="contenido" class="documents">
              <div class="documents__content">
-                <div class="left-infoContainer">
+                <sidebar class="left-infoContainer">
                     <div class="left-info">
                         <div class="name-container">
                     <span class="name">Mihir</span>
@@ -81,15 +81,15 @@
                 </div>
                     <div class="linksabout">
                         <ul class="ulabout">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Projects</li>
-                            <li>Experience</li>
-                            <li>Contact</li>
+                            <li id="aboutId">About</li>
+                            <li id="skillsId">Skills</li>
+                            <li id="projectId">Projects</li>
+                            
                         </ul>
                     </div>
                 </div>
-                </div>
+                </sidebar>
+                <div class="aboutmecontainer">
                 <div class="right-infoContainer">
                     <div class="intoabout">
                     <h1 class="welcome">welcome</h1>
@@ -134,6 +134,146 @@
 
                     </div>
                 </div>
+            </div>
+          
+
+           <!--  this is skill page -->
+           <div>
+
+
+        <div class="skilldiv">      
+            <div>     
+           <article class="card__mycomputer-logos">
+            <h4>FrontEnd</h4>
+            <div class="card__mycomputer-skill">
+                <div class="skill">
+                    <img src="/assets/img/logo-javascript.svg" alt="Logo JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/img/logo-html.svg" alt="Logo HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/img/logo-css.svg" alt="Logo CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/img/logo-react.svg" alt="Logo React">
+                    <p>React</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/img/logo-tailwind.svg" alt="Logo Tailwind">
+                    <p>Tailwind</p>
+                </div>
+                <div class="skill">
+                    <img style="width: 15px;" src="/assets/img/logo-figma.svg" alt="Logo Elementor">
+                    <p>Figma</p>
+                </div>
+                
+            </div>
+        </article>
+    </div> 
+    <div>
+        <article class="card__mycomputer-logos">
+            <h4>BackEnd</h4>
+            <div class="card__mycomputer-skill">
+                <div class="skill">
+                    <img src="/assets/img/logo-javascript.svg" alt="Logo JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/img/logo-html.svg" alt="Logo HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/img/logo-css.svg" alt="Logo CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/img/logo-react.svg" alt="Logo React">
+                    <p>React</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/img/logo-tailwind.svg" alt="Logo Tailwind">
+                    <p>Tailwind</p>
+                </div>
+                
+            </div>
+        </article>
+    </div>
+    </div>
+
+
+            <!-- this is project page -->
+            <div class="projectkiclass">
+                <h1 class="projectHeading">Projects</h1>
+                <div class="projectsCards">
+                    
+                    <div class="projectsCards__card">
+                        <a href="https://github.com/federicosldev/citas_react" target="_blank">
+                        <img src="/assets/img/project-patient-appointment-manager.jpg" alt="Image of the project patient appointment manager">
+                        <h3>Patient Appointment Manager</h3>
+                        <div class="projectsCards__card-logos">
+                            <img src="/assets/img/logo-react.svg" alt="logo React">
+                            <img src="/assets/img/logo-tailwind.svg" alt="logo Tailwind CSS">
+                        </div></a>
+                    </div>
+                    <div class="projectsCards__card">
+                        <a href="https://github.com/federicosldev/rock-paper-scissors-game" target="_blank">
+                        <img src="/assets/img/project-rock-papper-scissors.jpg" alt="Image of the project patient appointment manager">
+                        <h3>Rock Papper Scissors Game</h3>
+                        <div class="projectsCards__card-logos">
+                            <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                            <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                            <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                        </div></a>
+                    </div>
+                    <div class="projectsCards__card">
+                        <a href="https://github.com/federicosldev/to-do-list-javascript" target="_blank">
+                        <img src="/assets/img/project-to-do-list.jpg" alt="Image of the project patient appointment manager">
+                        <h3>To do list</h3>
+                        <div class="projectsCards__card-logos">
+                            <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                            <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                            <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                        </div></a>
+                    </div>
+                    <div class="projectsCards__card">
+                        <a href="https://github.com/federicosldev/advanced-pass-generator" target="_blank">
+                        <img src="/assets/img/project-advanced-password-generator.jpg" alt="Image of the project patient appointment manager">
+                        <h3>Advanced Password Generator</h3>
+                        <div class="projectsCards__card-logos">
+                            <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                            <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                            <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                        </div></a>
+                    </div>
+                    <div class="projectsCards__card">
+                        <a href="https://github.com/federicosldev/password-generator" target="_blank">
+                        <img src="/assets/img/project-password-generator.jpg" alt="Image of the project patient appointment manager">
+                        <h3>Password Generator</h3>
+                        <div class="projectsCards__card-logos">
+                            <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                            <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                            <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                        </div></a>
+                    </div>
+                    <div class="projectsCards__card">
+                        <a href="https://github.com/federicosldev/needle-clock" target="_blank">
+                        <img src="/assets/img/project-needle-clock.jpg" alt="Image of the project patient appointment manager">
+                        <h3>Needle Clock</h3>
+                        <div class="projectsCards__card-logos">
+                            <img src="/assets/img/logo-javascript.svg" alt="logo JavaScript">
+                            <img src="/assets/img/logo-html.svg" alt="logo HTML">
+                            <img src="/assets/img/logo-css.svg" alt="logo CSS">
+                        </div></a>
+                    </div>
+                    <div class="balance"></div>
+                </div>
+            </div>
+
+
                 </div>
              </div>
                
@@ -188,43 +328,7 @@
                     <h5>From <b>Indiaa</b><span><img style="width: 30px; margin-left: 5px;" src="/assets/img/murcia-spain.webp" alt="from murcia"></span></h5>
                 </article>
 
-                <article class="card__mycomputer-logos">
-                    <h4>Technologies</h4>
-                    <div class="card__mycomputer-skill">
-                        <div class="skill">
-                            <img src="/assets/img/logo-javascript.svg" alt="Logo JavaScript">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill">
-                            <img src="/assets/img/logo-html.svg" alt="Logo HTML">
-                            <p>HTML</p>
-                        </div>
-                        <div class="skill">
-                            <img src="/assets/img/logo-css.svg" alt="Logo CSS">
-                            <p>CSS</p>
-                        </div>
-                        <div class="skill">
-                            <img src="/assets/img/logo-react.svg" alt="Logo React">
-                            <p>React</p>
-                        </div>
-                        <div class="skill">
-                            <img src="/assets/img/logo-tailwind.svg" alt="Logo Tailwind">
-                            <p>Tailwind</p>
-                        </div>
-                        <div class="skill">
-                            <img src="/assets/img/logo-wordpress.svg" alt="Logo Wordpress">
-                            <p>Wordpress</p>
-                        </div>
-                        <div class="skill">
-                            <img src="/assets/img/logo-elementor.svg" alt="Logo Elementor">
-                            <p>Elementor</p>
-                        </div>
-                        <div class="skill">
-                            <img style="width: 15px;" src="/assets/img/logo-figma.svg" alt="Logo Elementor">
-                            <p>Figma</p>
-                        </div>
-                    </div>
-                </article>
+               
                 <article class="card__mycomputer-socialMedia">
                     <h4>Follow Me</h4>
                     <div class="socialMedia">

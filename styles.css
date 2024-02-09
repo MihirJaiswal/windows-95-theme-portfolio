@@ -89,7 +89,6 @@ button {
 }
 .start-button {
     background-image: url(assets/img/start-button.png);
-
     width: 55px;
     height: 25px;
     background-repeat: no-repeat;
@@ -117,21 +116,11 @@ button {
     margin-right: 6px;
 }
 
- /* Common styling for start button and start bar */
-
-
-/*  #startButton{
-    position: relative;
-    width:8%;
-    height: 80%;
-    top: var(--item_top);
-    left: .7%;
-} */
 
 .startBarShowing{
   display: none;
   position:absolute;
-  top: 40.8%;
+  top: 40%;
   left: 0%;
   width: 23vw;
   height: var(--start_bar_height);
@@ -208,7 +197,8 @@ button {
     margin: 0;
     padding: 0;
     color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 .linksabout{
@@ -226,9 +216,37 @@ button {
     text-decoration: underline;
 }
 
-.ulabout li{
-    color: #73519f;
-    text-decoration: underline;
+#aboutId{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-top: 30px;
+    padding: 0;
+    color: blue;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+#skillsId{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-top: 20px;
+    padding: 0;
+    color: purple;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+#projectId{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-top: 20px;
+    padding: 0;
+    color: purple;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.selected{
+    color: blue;
 }
 
 /* right side container */
@@ -297,6 +315,7 @@ button {
 
 .imgspan{
    font-size: 1rem;
+   text-align: center
 }
 .darkFont{
     font-size: 1.1rem;
@@ -316,6 +335,21 @@ button {
 .hobyimg{
     margin-left: 20px;
 }
+.projectHeading{
+    font-size: 2rem;
+    font-weight: 1000;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: black;
+    text-align:start;
+}
+
+.projectkiclass{
+    display: none;
+    flex-direction: column;
+    margin-top: 40px;
+}
 
 .documents__content{
     display: flex;
@@ -324,6 +358,15 @@ button {
 .aboutMesec{
     display: flex;
 }
+
+.skilldiv{
+    display: none;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 20px;
+    margin: auto;
+}
+
 @media (min-width: 1024px) and (max-width: 1440px) {
     .logo-fondo {
         position: absolute;
@@ -331,6 +374,7 @@ button {
         top: 46px;
         z-index: -1;
     }
+
     
     
 }
@@ -644,11 +688,11 @@ canvas {
     }
 }
 .projectsCards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    overflow-y: scroll;
 }
+
 .projectsCards__card {
     height: auto;
     padding: 5px;
@@ -688,7 +732,8 @@ canvas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        overflow-y: scroll;
+        
+        
     }
 }
 @media (width < 768px) {
@@ -696,7 +741,7 @@ canvas {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
-        overflow-y: scroll;
+        
     }
 }
 /* TASKS */
