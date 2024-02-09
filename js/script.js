@@ -163,6 +163,8 @@ const btnShowTasks = document.getElementById('displayTask');
 const tasksWindow = document.getElementById('ventana5');
 const myComputerWindow = document.getElementById('ventana6');
 const btnShowMyComputer = document.getElementById('displayMyComputer');
+const btnShowBrowser = document.getElementById('displayBrowser');
+const showbrowser = document.getElementById('ventana7');
 
 toggleWindow = windowElement => {
   if (windowElement.classList.contains('offWindow')) {
@@ -176,6 +178,7 @@ btnShowPaint.addEventListener('click', () => toggleWindow(paintWindow));
 btnShowSettings.addEventListener('click', () => toggleWindow(settingsWindow));
 btnShowDocuments.addEventListener('click', () => toggleWindow(documentsWindow));
 btnShowTasks.addEventListener('click', () => toggleWindow(tasksWindow));
+btnShowBrowser.addEventListener('click', () => toggleWindow(showbrowser));
 btnShowMyComputer.addEventListener('click', () =>
   toggleWindow(myComputerWindow)
 );
