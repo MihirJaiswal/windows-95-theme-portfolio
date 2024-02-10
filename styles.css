@@ -616,6 +616,78 @@ button {
         color: blue;
     }
 
+    /* form */
+
+    .wrapperForm{
+        width: 53rem;
+        padding: 55px;
+        border-radius: 5px;
+        margin-top: -3rem;
+        height: 600px;
+        overflow:visible;
+        overflow-x: hidden;
+        
+      }
+      
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .h2contact {
+        text-align: center;
+        font-size: 3rem;
+        font-family: milleniumBold;
+    }
+      
+      .wrapperForm p {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        
+      }
+      
+      .inputform {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-top: 2px solid #060505;
+        border-left: 2px solid #060505;
+        border-right: 2px solid #939292;
+        border-bottom: 2px solid #939292;
+        font-size: 16px;
+      }
+      .h3contact{
+        font-size: 1.2rem;
+        margin-bottom: 2px;
+        padding: 5px;
+        font-family: millennium;
+      }
+      .fontred{
+        color: red;
+      }
+      .inputformtext{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-top: 2px solid #060505;
+        border-left: 2px solid #060505;
+        border-right: 2px solid #939292;
+        border-bottom: 2px solid #939292;
+        font-size: 16px;
+        height: 150px;
+      }
+      .upward{
+        margin-top: -15px;
+      }
+      .formdiv{
+        display: flex;
+        justify-content: space-between;
+      }
+
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     .logo-fondo {

@@ -466,6 +466,51 @@
         
 </div>
 
+<div class="ventana offWindow" id="ventana8"> 
+    <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
+        <span>Game</span>
+        <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
+    </div>
+    <canvas class="canvas"></canvas>
+</div>
+
+<div class="ventana offWindow" id="ventana9">
+    <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
+        <span>Contact</span>
+        <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
+    </div>
+<div class="wrapperForm">
+    <h2 class="h2contact">Contact</h2>
+    <p class="textabout1" style="margin-top: -2rem;">Get in touch, or swing by for a cup of coffee xD</p>
+    <div id="error_message"></div>
+    <form id="myform" action="jaiswalmihir.business@gmail.com" method="post" enctype="text/plain" onsubmit="return validate();">
+      <div class="input_field">
+        <h3 class="h3contact"><span class="fontred">*</span>Your name:</h3>
+          <input type="text" placeholder="Name" id="name" class="inputform">
+      </div>
+      <div class="input_field upward">
+          <h3 class="h3contact"><span class="fontred">*</span>Subject:</h3>
+          <input type="text" placeholder="Subject" id="subject" class="inputform">
+      </div>
+      <div class="input_field upward">
+          <h3 class="h3contact"><span class="fontred">*</span>Email:</h3>
+          <input type="text" placeholder="Email" id="email" class="inputform">
+      </div>
+      <div class="input_field upward">
+          <h3 class="h3contact"><span class="fontred">*</span>Message:</h3>
+          <textarea placeholder="Message" id="message" class="inputformtext"></textarea>
+      </div>
+      <div class="formdiv">
+      <div class="btn">
+          <input type="submit" value="Send message" style="display: block; padding: 5px 2px; font-family: milleniumBold; font-size: 1.2rem;">
+      </div>
+      <p style="font-size: 1.2rem; margin: -10px;">All message get forwarded to my personal email</p>
+    </div>
+    </form> 
+  </div>
+  <div class="balance"></div>
+</div>
+
         <section class="navIcons">
 
            <div class="navIcons1">
@@ -495,6 +540,14 @@
             <div id="displayBrowser" class="navIcons__icon">
                 <img src="/assets/img/projectsicon.png" alt="icon settings" style="width: 55px;">
                 <h2>Browser</h2>
+            </div>
+            <div id="displayGame" class="navIcons__icon" style="margin-top: -2px;">
+                <img src="/assets/img/gameicon.png" alt="icon settings" style="width: 100px; height: 100px; margin-top: -24px;">
+                <h2 style="margin-top: -17px;">Game</h2>
+            </div>
+            <div id="displayContact" class="navIcons__icon" style="margin-top: -2px;">
+                <img src="/assets/img/email.png" alt="icon settings" style="width: 100px; height: 100px; margin-top: -24px;">
+                <h2 style="margin-top: -17px;">Contact</h2>
             </div>
         </div>
         </section>
@@ -552,9 +605,11 @@
         </div>
 	</div>
     <script src="/js/script.js"></script>  
+    <script src="/js/form.js"></script>
 </div>
 <div class="fgbg"></div>
 <script src="index.js" defer type="module"></script>
+<script src="game.js" defer type="module"></script>
 </body>
 
 </html>

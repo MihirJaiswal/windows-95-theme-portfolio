@@ -165,6 +165,12 @@ const myComputerWindow = document.getElementById('ventana6');
 const btnShowMyComputer = document.getElementById('displayMyComputer');
 const btnShowBrowser = document.getElementById('displayBrowser');
 const showbrowser = document.getElementById('ventana7');
+const btnShowGame = document.getElementById('displayGame');
+const gameWindow = document.getElementById('ventana8');
+const btnShowContact = document.getElementById('displayContact');
+const contactWindow = document.getElementById('ventana9');
+const btnShowErrorMessage = document.getElementById('displayErrorMessage');
+const errorMessageWindow = document.getElementById('ventana10');
 
 toggleWindow = windowElement => {
   if (windowElement.classList.contains('offWindow')) {
@@ -179,6 +185,8 @@ btnShowSettings.addEventListener('click', () => toggleWindow(settingsWindow));
 btnShowDocuments.addEventListener('click', () => toggleWindow(documentsWindow));
 btnShowTasks.addEventListener('click', () => toggleWindow(tasksWindow));
 btnShowBrowser.addEventListener('click', () => toggleWindow(showbrowser));
+btnShowGame.addEventListener('click', () => toggleWindow(gameWindow));
+btnShowContact.addEventListener('click', () => toggleWindow(contactWindow));
 btnShowMyComputer.addEventListener('click', () =>
   toggleWindow(myComputerWindow)
 );
