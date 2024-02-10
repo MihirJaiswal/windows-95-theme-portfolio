@@ -169,8 +169,8 @@ const btnShowGame = document.getElementById('displayGame');
 const gameWindow = document.getElementById('ventana8');
 const btnShowContact = document.getElementById('displayContact');
 const contactWindow = document.getElementById('ventana9');
-const btnShowErrorMessage = document.getElementById('displayErrorMessage');
-const errorMessageWindow = document.getElementById('ventana10');
+const btnShowRecycleBin = document.getElementById('displayRecycleBin');
+const recycleBin = document.getElementById('ventana10');
 
 toggleWindow = windowElement => {
   if (windowElement.classList.contains('offWindow')) {
@@ -187,6 +187,7 @@ btnShowTasks.addEventListener('click', () => toggleWindow(tasksWindow));
 btnShowBrowser.addEventListener('click', () => toggleWindow(showbrowser));
 btnShowGame.addEventListener('click', () => toggleWindow(gameWindow));
 btnShowContact.addEventListener('click', () => toggleWindow(contactWindow));
+btnShowRecycleBin.addEventListener('click', () => toggleWindow(recycleBin));
 btnShowMyComputer.addEventListener('click', () =>
   toggleWindow(myComputerWindow)
 );
