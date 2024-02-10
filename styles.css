@@ -4,6 +4,29 @@
 @font-face {
     font-family: 'Windows Regular';
     src: url('/fonts/windows-regular.ttf') format('truetype');
+   
+}
+
+@font-face {
+    font-family: 'Gastromond';
+    src: url('/fonts/gastromondtest-regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'millennium';
+    src: url('/fonts/Millennium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'milleniumBold';
+    src: url('/fonts/Millennium-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'terminal';
+    src: url('/fonts/Terminal.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'mss';
+    src: url('/fonts/MSSansSerif.ttf') format('truetype');
 }
 
 
@@ -231,7 +254,7 @@ button {
 #aboutId{
     font-size: 1.5rem;
     font-weight: 1000;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 0;
     color: blue;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -257,6 +280,16 @@ button {
     cursor: pointer;
 }
 
+#homeId{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-top: 30px;
+    padding: 0;
+    color: purple;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
 .selected{
     color: blue;
 }
@@ -265,7 +298,7 @@ button {
 
 .right-infoContainer{
     margin-top: 40px;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     font-size: 1.5rem;
@@ -467,7 +500,6 @@ button {
     margin-top: 0;
     margin-bottom: 0;
     margin-bottom: 0;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
   .projectPara:after {/* this adds an extra invisible line, so any other line is justified */
     content:'';
@@ -506,6 +538,82 @@ button {
     }
     .projectspan{
         color: purple;
+    }
+    
+    .left-infoContainer{
+        display: none;
+    }
+
+    .homewid{
+        width: 91.2vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        margin: 20px;
+        padding: 50px;
+        margin-top: 15px;
+        border-radius: 50%;
+    }
+    .namecontainerhome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        margin: 20px;
+        padding: 50px;
+        margin-top: 20px;
+        border-radius: 50%;
+    }
+    .name3{
+        font-size: 4rem;
+        font-weight: 1000;
+        margin: 0;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        color: black;
+        text-align: center;
+        font-family: Gastromond;
+        font-weight: 100;
+    }
+    .spanhome{
+        font-size: 1.8rem;
+        font-weight: 1000;
+        margin-top: -12px;
+        color: black;
+        text-align: center;
+        font-weight: 200;
+        font-family: milleniumBold;
+    }
+    .homeparent{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding: 50px;
+        margin-top: -70px;
+        border-radius: 50%;
+        color: black;
+        font-weight: 200;
+        font-family: milleniumBold;
+    }
+
+    .homeicons{
+        font-size: 1.5rem;
+        font-weight: 1000;
+        margin-top: 20px;
+        padding-left: 20px;
+        text-decoration: underline;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 50%;
+        color: purple;
+        height: 50px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .blueclass{
+        color: blue;
     }
 
 

@@ -382,3 +382,50 @@ document.addEventListener('click', function (event) {
     about.style.color = 'purple';
   }
 })
+
+const rightinfo = document.querySelector('.right-infoContainer')
+const skilldiv = document.querySelector('.skilldiv')
+const projectdiv = document.querySelector('.projectkiclass')
+const leftinfo = document.querySelector('.left-infoContainer')
+const homewid = document.querySelector('.homewid')
+const homeabout = document.querySelector('#homeabout')
+const homeskills = document.querySelector('#homeskills')
+const homeproject = document.querySelector('#homeproject')
+
+
+
+homeabout.addEventListener('click', function (event) {
+  leftinfo.style.display = 'flex';
+  rightinfo.style.display = 'flex';
+  homewid.style.display = 'none';
+  about.style.color = 'blue';
+  skills.style.color = 'purple';
+  projects.style.color = 'purple';
+
+})
+
+homeskills.addEventListener('click', function (event) {
+  leftinfo.style.display = 'flex';
+  skilldiv.style.display = 'flex';
+  homewid.style.display = 'none';
+  skills.style.color = 'blue';
+  about.style.color = 'purple';
+  projects.style.color = 'purple';
+})
+homeproject.addEventListener('click', function (event) {
+  leftinfo.style.display = 'flex';
+  projectdiv.style.display = 'flex';
+  homewid.style.display = 'none';
+  projects.style.color = 'blue';
+  about.style.color = 'purple';
+  skills.style.color = 'purple';
+})
+
+const homeId = document.querySelector('#homeId');
+homeId.addEventListener('click', function () {
+  leftinfo.style.display = 'none';
+  rightinfo.style.display = 'none';
+  skilldiv.style.display = 'none';
+  projectdiv.style.display = 'none';
+  homewid.style.display = 'block';
+})
