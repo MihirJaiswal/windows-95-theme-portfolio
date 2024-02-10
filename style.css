@@ -3,11 +3,11 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     overflow: hidden;
-    background: black;
+   background-color: black;
 }
 
 .windows95 {
-    background:black; /* Windows 95 color */
+   /* Windows 95 color */
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -17,13 +17,18 @@ body {
 }
 
 .computer {
-    background-color:  #8f8f9b;;
-    border-left: 90px solid #8f8f9b; /* Windows 95 color */
-    border-right: 90px solid #8f8f9b; 
-    border-top: 35px solid #8f8f9b;
-    border-bottom: 35px solid #8f8f9b;
-    border-radius: 40px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 1); 
+    background: #8a8a89;
+    clip-path: polygon(1.1% 0, 98.9% 0, 100% 100%, 0% 100%);
+    border-left:130px solid transparent; /* Set a color for the border */
+    border-right:130px solid transparent; /* Set a color for the border */
+    border-top:30px solid transparent; /* Set a color for the border */
+    border-bottom:31px solid transparent; /* Set a color for the border */
+    border-image-source: url(assets/img/retrocomp.jpg);
+    border-image-slice: 107; /* Adjust the value as needed */
+    border-image-outset: 0;
+    border-image-width: 130px;
+    border-image-repeat:stretch;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     overflow: hidden;
 }
 
@@ -31,10 +36,20 @@ body {
     width: 60vw;
     height: 90vh;
     overflow: hidden;
-    border: black 2px solid;
+    border: black 5px solid;
     border-radius: 10px;
+    margin: 0 auto;
 }
-
+.monitor{
+    border:10px solid;
+    border-image: url(assets/img/retro-computer-technology-with-monitor-hardware.jpg);
+    border-image-slice: 400;
+    border-image-outset: 0;
+    border-image-width: 50rem;
+    border-image-repeat: stretch;
+    background-color: #5D5E5B;
+    
+}
 iframe {
     width: 100%;
     height: 100%;
