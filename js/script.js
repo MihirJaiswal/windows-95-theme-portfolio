@@ -447,3 +447,16 @@ conctacthere.addEventListener('click', function () {
   contactWindow.classList.remove('offWindow');
   toggleWindow(contactWindow);
 })
+
+const clickprint = document.querySelector('#clickprint');
+clickprint.addEventListener('click', function () {
+  myComputerWindow.classList.remove('offWindow');
+  toggleWindow(paintWindow);
+})
+
+const clickprint1 = document.querySelector('#clickprint1');
+clickprint1.addEventListener('click', function () {
+  myComputerWindow.classList.remove('offWindow');
+  toggleWindow(paintWindow);
+})
+
