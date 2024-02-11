@@ -15,6 +15,8 @@
 <body>
     
         <div id="preloader"></div>
+        <div id="shutDown"></div>
+        <div id="afterShutDown"></div>
 
     <section>
     <div id="overlay-black"></div>
@@ -683,7 +685,7 @@
 
             <!-- Row7 final row -->
             <img class="startIcon1" src="assets/img/tile044.png" alt="icon6">
-            <p>
+            <p   id="shutDownBtn" style="cursor: pointer;">
                 Sh
                 <u>u</u>t Down...
             </p>
@@ -711,6 +713,11 @@
     window.addEventListener("load", function () {
         loader.style.display = "none";
     });
+    var shutDown = document.getElementById("shutDown");
+    var shutDownBtn = document.getElementById("shutDownBtn");
+    shutDownBtn.addEventListener("click", function () {
+       shutDown.style.display = "block";
+    });
 </script>
 <audio src="assets/img/audio.mp3" id="audio"></audio>
 <audio src="assets/img/audio2.mp3" id="audio2"></audio>
@@ -720,10 +727,17 @@
         audio.play();
     })
 
-    document.addEventListener('keyup', function(){
-        var audio1 = document.getElementById('audio2');
-        audio1.play();
-    })
+    var shutDownBtn = document.getElementById("shutDownBtn");
+var shutDown = document.getElementById("shutDown");
+var afterShutDown = document.getElementById("afterShutDown");
+
+shutDownBtn.addEventListener("click", function () {
+    shutDown.style.display = "block";
+    setTimeout(function () {
+        shutDown.style.display = "none";
+        afterShutDown.style.display = "block";
+    }, 4000); 
+});
 </script>
 </section>
 </body>
