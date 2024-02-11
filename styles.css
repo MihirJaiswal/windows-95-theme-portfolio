@@ -463,8 +463,9 @@ button {
 }
 .clickprint{
     color: purple;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     cursor: pointer;
+    font-family: milleniumBold;
 }
 .forscroll{
    
@@ -499,7 +500,7 @@ button {
 
 .projectPara {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     width:18em;
     text-align:justify;
     padding-left: 5px;
@@ -507,7 +508,7 @@ button {
     margin-top: 0;
     margin-bottom: 0;
     margin-bottom: 0;
-    font-family: terminal;
+    font-family: millennium;
     }
   .projectPara:after {/* this adds an extra invisible line, so any other line is justified */
     content:'';
@@ -697,6 +698,10 @@ button {
       .formdiv{
         display: flex;
         justify-content: space-between;
+      }
+
+      .fontpurple{
+        color: purple;
       }
 
 
@@ -1047,8 +1052,9 @@ canvas {
 .projectsCards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0px;
     padding: 0px;
+    margin-left: -23px;
 }
 
 .projectsCards__card {

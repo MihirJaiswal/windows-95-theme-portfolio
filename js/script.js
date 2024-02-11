@@ -188,6 +188,8 @@ btnShowBrowser.addEventListener('click', () => toggleWindow(showbrowser));
 btnShowGame.addEventListener('click', () => toggleWindow(gameWindow));
 btnShowContact.addEventListener('click', () => toggleWindow(contactWindow));
 btnShowRecycleBin.addEventListener('click', () => toggleWindow(recycleBin));
+
+
 btnShowMyComputer.addEventListener('click', () =>
   toggleWindow(myComputerWindow)
 );
@@ -437,4 +439,11 @@ homeId.addEventListener('click', function () {
   skilldiv.style.display = 'none';
   projectdiv.style.display = 'none';
   homewid.style.display = 'block';
+})
+
+const conctacthere = document.querySelector('#contacthere');
+
+conctacthere.addEventListener('click', function () {
+  contactWindow.classList.remove('offWindow');
+  toggleWindow(contactWindow);
 })
