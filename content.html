@@ -729,9 +729,17 @@
 </script>
 <audio src="assets/img/audio.mp3" id="audio"></audio>
 <audio src="assets/img/audio2.mp3" id="audio2"></audio>
+
 <script>
+
     document.addEventListener('mousedown', function(){
-        var audio = document.getElementById('audio');
+        var audio1 = document.getElementById('audio');
+        audio1.play();
+    })
+    
+
+    document.addEventListener('keydown', function(){
+        var audio = document.getElementById('audio2');
         audio.play();
     })
 

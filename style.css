@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     overflow: hidden;
     background: rgb(2,0,36);
-background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(3,3,11,1) 35%, rgba(20,1,106,1) 100%);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(3,3,11,1) 35%, rgb(11, 1, 63) 100%);
     
 }
 
