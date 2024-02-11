@@ -227,12 +227,12 @@ button {
 }
 
 .name-container .name{
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 900;
     margin: 0;
     padding: 0;
     color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:Gastromond;
     
 }
 
@@ -249,6 +249,7 @@ button {
     padding: 0;
     color: #000;
     text-decoration: underline;
+    
 }
 
 #aboutId{
@@ -259,6 +260,7 @@ button {
     color: blue;
     font-family:Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
+    font-family: milleniumBold;
 }
 #skillsId{
     font-size: 1.5rem;
@@ -268,6 +270,7 @@ button {
     color: purple;
     font-family:Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
+    font-family: milleniumBold;
 }
 
 #projectId{
@@ -278,6 +281,7 @@ button {
     color: purple;
     font-family:Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
+    font-family: milleniumBold;
 }
 
 #homeId{
@@ -288,6 +292,7 @@ button {
     color: purple;
     font-family:Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
+    font-family: milleniumBold;
 }
 
 .selected{
@@ -309,12 +314,12 @@ button {
 
 .intoabout .welcome{
     
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 1000;
     margin: 0;
     padding: 0;
     color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Gastromond;
 }
 .intoabout .namewelcome{
     font-size: 1.5rem;
@@ -322,7 +327,7 @@ button {
     margin-top: 2px;
     padding: 0px 10px;
     color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:millennium;
 }
 .textabout{
     font-size: 1.3rem;
@@ -330,6 +335,7 @@ button {
     margin: 0;
     padding: 0;
     color: black;
+    font-family: millennium;
 }
 
 .textabout1{
@@ -339,12 +345,13 @@ button {
     font-size: 1.5rem;
 }
 .about1{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 1000;
     margin-bottom: 5px;
     margin: 0;
     padding: 0;
     color: black;
+    font-family: milleniumBold;
 }
 
 
@@ -500,6 +507,7 @@ button {
     margin-top: 0;
     margin-bottom: 0;
     margin-bottom: 0;
+    font-family: terminal;
     }
   .projectPara:after {/* this adds an extra invisible line, so any other line is justified */
     content:'';
@@ -515,6 +523,7 @@ button {
         margin-top: 2px;
         margin-bottom: 0;
         color: black;
+        font-family: milleniumBold;
     }
 
     
@@ -538,6 +547,8 @@ button {
     }
     .projectspan{
         color: purple;
+        font-weight: 600;
+        cursor: pointer;
     }
     
     .left-infoContainer{
