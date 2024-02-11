@@ -470,3 +470,13 @@ drawings.addEventListener('click', function () {
   drawingWindow.classList.remove('offWindow');
   toggleWindow(drawingWindow);
 })
+
+document.addEventListener("DOMContentLoaded", function() {
+  var reloadBtn = document.getElementById("reloadBtn");
+
+  reloadBtn.addEventListener("click", function () {
+      console.log("Reload button clicked");
+      // Perform any additional actions or reload the page here
+      location.reload();
+  });
+});
