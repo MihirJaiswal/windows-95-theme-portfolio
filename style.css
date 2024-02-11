@@ -3,7 +3,9 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     overflow: hidden;
- background-color: black;
+    background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(3,3,11,1) 35%, rgba(20,1,106,1) 100%);
+    
 }
 
 .windows95 {

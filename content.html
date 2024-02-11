@@ -13,6 +13,10 @@
     <title>Mihir Jaiswal</title>
 </head>
 <body>
+    
+        <div id="preloader"></div>
+
+    <section>
     <div id="overlay-black"></div>
     <div class="main-container">
     <div style="z-index: 1;" id="ventana3" class="ventana offWindow">
@@ -700,6 +704,13 @@
 <div class="fgbg"></div>
 <script src="index.js" defer type="module"></script>
 <script src="game.js" defer type="module"></script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+    });
+</script>
+</section>
 </body>
 
 </html>

@@ -40,6 +40,20 @@ body {
     font-family: 'Windows Regular';
 }
 
+#preloader{
+    background: #000 url(assets/img/7rF7.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    top: 0;
+    left: 0
+}
+
 #overlay-black{
     background: url(assets/img/logofondo-windows.svg);
     background-repeat: no-repeat;
