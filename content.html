@@ -506,22 +506,22 @@
         <a href="www.linkedin.com/in/mihir-jaiswal-322898287"><img src="assets/img/contact-in.png" alt="" style="width: 40px; height: 40px;"></a>
     </div>
     <div id="error_message"></div>
-    <form id="myform" action="jaiswalmihir.business@gmail.com" method="post" enctype="text/plain" onsubmit="return validate();">
+    <form id="myform"><!-- action="https://formsubmit.co/el/racefu" method="post" -->
       <div class="input_field">
         <h3 class="h3contact"><span class="fontred">*</span>Your name:</h3>
-          <input type="text" placeholder="Name" id="name" class="inputform">
+          <input type="text" placeholder="Name" id="name" class="inputform" name="name"/>
       </div>
       <div class="input_field upward">
           <h3 class="h3contact"><span class="fontred">*</span>Subject:</h3>
-          <input type="text" placeholder="Subject" id="subject" class="inputform">
+          <input type="text" placeholder="Subject" id="subject" class="inputform" name="subject"/>
       </div>
       <div class="input_field upward">
           <h3 class="h3contact"><span class="fontred">*</span>Email:</h3>
-          <input type="text" placeholder="Email" id="email" class="inputform">
+          <input type="email" placeholder="Email" id="email" class="inputform" name="email"/>
       </div>
       <div class="input_field upward">
           <h3 class="h3contact"><span class="fontred">*</span>Message:</h3>
-          <textarea placeholder="Message" id="message" class="inputformtext"></textarea>
+          <textarea placeholder="Message" id="message" class="inputformtext" name="message"></textarea>
       </div>
       <div class="formdiv">
       <div class="btn">
@@ -711,7 +711,6 @@
         </div>
 	</div>
     <script src="/js/script.js"></script>  
-    <script src="/js/form.js"></script>
 </div>
 <div class="fgbg"></div>
 <script src="index.js" defer type="module"></script>
@@ -744,7 +743,7 @@
         audio.play();
     })
 
-    var shutDownBtn = document.getElementById("shutDownBtn");
+var shutDownBtn = document.getElementById("shutDownBtn");
 var shutDown = document.getElementById("shutDown");
 var afterShutDown = document.getElementById("afterShutDown");
 
