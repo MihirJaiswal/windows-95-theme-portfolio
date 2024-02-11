@@ -134,8 +134,8 @@
                     <div class="aboutmesec">
                         <h1 class="about1">About Me</h1>
                         <p class="textabout">From a young age, I have had an interest in computers. and i was also very creative, i used to draw and paint in my spare time. This creativeness allows me to express my creativity in web applications and softwares. </p>
-                        <div class="aboutimg">
-                            <img src="assets/img/workingAtComputer.jpg" alt="" style="height: 300px; width: 500px;">
+                        <div class="aboutimg" style="display: flex; justify-content: center; margin-left: 20px;">
+                            <img src="assets/img/minty.jpeg" alt="" style="height: 300px; width: 500px;">
                         </div>
                         <h3 class="imgspan"><span class="darkFont">Figure 1 : </span>A real photo of me making this website</h3>
                         <p  class="textabout">I started coding seriously in my college years. where i learned several programming languages like C, C++, JavaScript etc.</p>
@@ -145,7 +145,7 @@
                     <div class="aboutmesec2">
                         <div class="textabout">
                             <h1 class="about1">My Hobbies</h1>
-                            <p>Beyond software development, I enjoy playing video games, drwaing, cooking and listening to music. you can check some of drawings <span class="fontpurple">here.</span></p>
+                            <p>Beyond software development, I enjoy playing video games, drwaing, cooking and listening to music. you can check some of drawings <span class="fontpurple" id="drawings" style="cursor: pointer;">here.</span></p>
                             <p>I also love to read books, and write stories in my spare time. I also love meeting new people and i am also a passionate public speaker, I usually host events for my club in college. </p>
                         </div>
                         <div class="hobyimg">
@@ -552,6 +552,45 @@
     </div>
 </div>
 
+
+    <div class="ventana offWindow" id="ventana12">
+        <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
+            <span>Recycle Bin</span>
+            <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
+        </div>
+        <div style="padding: 15px 2px; height: 35rem; overflow: scroll; overflow-x: hidden;">
+      <div style="display: flex; flex: wrap;">
+       <div style="display: flex; flex-direction: column; align-items: center">
+        <div style="height: 290px ; width: 200px; border: 1px solid #605c5c; background: #f5f5f5; display: flex; align-items: center; justify-content: center; margin: 10px"><img src="assets/img/touka-min.jpeg" alt="" style="width:200px; loading: lazy"></div>
+        <span style="font-size: 1rem; padding-bottom:10px; font-family: milleniumBold;">img1</span>
+       </div>
+
+       <div style="display: flex; flex-direction: column; align-items: center">
+        <div  style="height: 290px ; width: 200px; border: 1px solid #605c5c; background: #f5f5f5;  display: flex; align-items: center; justify-content: center; margin: 10px"><img src="assets/img/animegrill-min.jpeg" alt="" style="width:200px; loading: lazy"></div>
+        <span style="font-size: 1rem; padding-bottom:10px; font-family: milleniumBold;">img2</span>
+       </div>
+
+       <div style="display: flex; flex-direction: column; align-items: center">
+       <div  style="height: 290px ; width: 200px; border: 1px solid #605c5c; background: #f5f5f5;  display: flex; align-items: center; justify-content: center; margin: 10px"> <img src="assets/img/shelby-min.jpeg" alt="" style="width:200px; loading: lazy"></div>
+       <span style="font-size: 1rem; padding-bottom:10px; font-family: milleniumBold;">img3</span>
+       </div>
+       <div style="display: flex; flex-direction: column; align-items: center">
+        <div  style="height: 290px ; width: 200px; border: 1px solid #605c5c; background: #f5f5f5; display: flex; align-items: center; justify-content: center; margin: 10px"><img src="assets/img/robertpatinson-min.jpeg" alt="" style="width:200px; height: 270px; loading: lazy"></div>
+        <span style="font-size: 1rem; padding-bottom:10px; font-family: milleniumBold;">img4</span>
+       </div>
+      </div>
+      <div>
+        <div style="display: flex; align-items: center;  background-color: #f5f5f5; border: 1px solid #e6e6e6; cursor: pointer;">
+            <img src="assets/img/Instagram.svg" alt="" style="height: 35px; margin: 9px;">
+            <h3 style="padding: 0px;"><a href="https://www.instagram.com/monty_draws_/?hl=en" target="_blank">Click here for more</a></h3>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+</div>
+
         <section class="navIcons">
 
             <div style="display: flex; gap: 20px;">
@@ -593,6 +632,10 @@
             </div>
         </div>
         <div class="navIcons1">
+            <div id="displayDrawings" class="navIcons__icon">
+                <img src="/assets/img/tile042.png" alt="icon settings" style="width: 60px; height: 90px; margin-top: -30px;">
+                <h2 style="margin-top: -4px">Drawings</h2>
+            </div>
             <div id="displayRecycleBin" class="navIcons__icon" style="margin-top: 5px;">
                 <img src="/assets/img/recyclebin.png" alt="icon settings" style="width: 90px; height: 90px; margin-top: -24px;">
                 <h2 style="margin-top: -15px">Recycle Bin</h2>

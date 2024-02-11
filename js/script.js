@@ -171,6 +171,8 @@ const btnShowContact = document.getElementById('displayContact');
 const contactWindow = document.getElementById('ventana9');
 const btnShowRecycleBin = document.getElementById('displayRecycleBin');
 const recycleBin = document.getElementById('ventana10');
+const btnShowDrawings = document.getElementById('displayDrawings');
+const drawingWindow = document.getElementById('ventana12');
 
 toggleWindow = windowElement => {
   if (windowElement.classList.contains('offWindow')) {
@@ -188,6 +190,8 @@ btnShowBrowser.addEventListener('click', () => toggleWindow(showbrowser));
 btnShowGame.addEventListener('click', () => toggleWindow(gameWindow));
 btnShowContact.addEventListener('click', () => toggleWindow(contactWindow));
 btnShowRecycleBin.addEventListener('click', () => toggleWindow(recycleBin));
+btnShowDrawings.addEventListener('click', () => toggleWindow(drawingWindow));
+
 
 
 btnShowMyComputer.addEventListener('click', () =>
@@ -204,6 +208,7 @@ const buttonFilterActiveTaskElement = document.getElementById('activeTask');
 const buttonFilterAllTaskElement = document.getElementById('showAllTask');
 const buttonDeleteTaskElement = document.getElementById('deleteTask');
 const remainTasksElement = document.getElementById('remainTasks');
+
 
 let tasks = [];
 
@@ -460,3 +465,8 @@ clickprint1.addEventListener('click', function () {
   toggleWindow(paintWindow);
 })
 
+const drawings = document.querySelector('#drawings');
+drawings.addEventListener('click', function () {
+  drawingWindow.classList.remove('offWindow');
+  toggleWindow(drawingWindow);
+})
