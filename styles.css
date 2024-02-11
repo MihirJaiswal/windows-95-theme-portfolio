@@ -371,9 +371,9 @@ button {
    text-align: center
 }
 .darkFont{
-    font-size: 1.1rem;
-    font-weight:10000;
-
+    font-size: 1rem;
+    font-weight:1000;
+    font-family: milleniumBold;
 }
 .aboutmesec2{
     display: flex;
