@@ -728,6 +728,7 @@
 </script>
 <audio src="assets/img/audio.mp3" id="audio"></audio>
 <audio src="assets/img/audio2.mp3" id="audio2"></audio>
+<audio src="assets/img/audio3.mp3" id="audio3"></audio>
 
 <script>
 
@@ -742,6 +743,14 @@
         audio.volume = Math.max(0.2);
         audio.play();
     })
+
+    window.addEventListener('load', function(){
+        var audio = document.getElementById('audio3');
+        audio.volume = Math.max(0.2);
+        audio.play();
+    })
+
+
 
 var shutDownBtn = document.getElementById("shutDownBtn");
 var shutDown = document.getElementById("shutDown");
