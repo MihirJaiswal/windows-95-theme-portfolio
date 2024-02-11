@@ -722,6 +722,7 @@
     });
     var shutDown = document.getElementById("shutDown");
     var shutDownBtn = document.getElementById("shutDownBtn");
+    
     shutDownBtn.addEventListener("click", function () {
        shutDown.style.display = "block";
     });
@@ -729,6 +730,7 @@
 <audio src="assets/img/audio.mp3" id="audio"></audio>
 <audio src="assets/img/audio2.mp3" id="audio2"></audio>
 <audio src="assets/img/audio3.mp3" id="audio3"></audio>
+<audio src="assets/img/audio4.mp3" id="audio4"></audio>
 
 <script>
 
@@ -746,6 +748,12 @@
 
     window.addEventListener('load', function(){
         var audio = document.getElementById('audio3');
+        audio.volume = Math.max(0.2);
+        audio.play();
+    })
+
+    shutDownBtn.addEventListener('click', function(){
+        var audio = document.getElementById('audio4');
         audio.volume = Math.max(0.2);
         audio.play();
     })
