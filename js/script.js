@@ -173,6 +173,8 @@ const btnShowRecycleBin = document.getElementById('displayRecycleBin');
 const recycleBin = document.getElementById('ventana10');
 const btnShowDrawings = document.getElementById('displayDrawings');
 const drawingWindow = document.getElementById('ventana12');
+const btnShowCars = document.getElementById('displayCars');
+const carsWindow = document.getElementById('ventana13');
 
 toggleWindow = windowElement => {
   if (windowElement.classList.contains('offWindow')) {
@@ -191,6 +193,7 @@ btnShowGame.addEventListener('click', () => toggleWindow(gameWindow));
 btnShowContact.addEventListener('click', () => toggleWindow(contactWindow));
 btnShowRecycleBin.addEventListener('click', () => toggleWindow(recycleBin));
 btnShowDrawings.addEventListener('click', () => toggleWindow(drawingWindow));
+btnShowCars.addEventListener('click', () => toggleWindow(carsWindow));
 
 
 
