@@ -617,6 +617,61 @@
     </div>
 </div>
 
+<div class="ventana offWindow" id="ventana14" style="width: 45rem;">
+    <div id="windowHeaderDragable" class="js-winheader windows-header" style="padding-right:3px;">
+        <span>Notepad</span>
+        <button class="windows-button closeBtn" style="padding:0; height:16px;width:16px;position:relative;"><img src="/assets/img/close-icon.png" style="position:absolute;left:1px;top:0px;"></button>
+    </div>
+    <div class="toolbar">
+        <label for="font-size">Font Size:</label>
+        <select id="font-size">
+            <option value="14px">Small</option>
+            <option value="16px">Medium</option>
+            <option value="18px">Large</option>
+        </select>
+
+        <label for="font-family">Font Family:</label>
+        <select id="font-family">
+            <option value="Arial">Arial</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+        </select>
+
+        <button id="bold-button" style="background-color: rgb(203, 200, 200); border: none;"><img src="assets/img/bold.png" alt="" style="width:15px; margin-top: 3px;"></button>
+
+        <button id="download-button"><img src="assets/img/save.png" alt="" style="width:15px; margin-top: 3px;"></button>
+    </div>
+
+    <div class="notepad">
+        <textarea id="text-area" placeholder="Start typing..."></textarea>
+    </div>
+</div>
+<style>
+  .toolbar {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.toolbar label, .toolbar select, .toolbar button {
+    margin-right: 10px;
+}
+
+.notepad {
+    width: 80%;
+    margin: 20px auto;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+}
+</style>
+
         <section class="navIcons">
 
             <div style="display: flex; gap: 20px;">
@@ -666,9 +721,13 @@
                 <img src="/assets/img/car.png" alt="icon settings" style="width: 48px; height: 48px; margin-top: 0px;">
                 <h2 style="margin-top: 12px">Car Race</h2>
             </div>
+            <div id="displayNotepad" class="navIcons__icon">
+                <img src="/assets/img/Notepad.svg" alt="icon settings" style="width: 48px; height: 48px; margin-top: 0px;">
+                <h2 style="margin-top: 8px">Notepad</h2>
+            </div>
             <div id="displayRecycleBin" class="navIcons__icon" style="margin-top: 5px;">
-                <img src="/assets/img/recyclebin.png" alt="icon settings" style="width: 90px; height: 90px; margin-top: -24px;">
-                <h2 style="margin-top: -15px">Recycle Bin</h2>
+                <img src="/assets/img/recyclebin.png" alt="icon settings" style="width: 95px; height: 95px; margin-top: -27px;">
+                <h2 style="margin-top: -18px">Recycle Bin</h2>
             </div>
         </div>
     </div>

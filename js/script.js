@@ -175,6 +175,9 @@ const btnShowDrawings = document.getElementById('displayDrawings');
 const drawingWindow = document.getElementById('ventana12');
 const btnShowCars = document.getElementById('displayCars');
 const carsWindow = document.getElementById('ventana13');
+const btnShowNotepad = document.getElementById('displayNotepad');
+const notepadWindow = document.getElementById('ventana14');
+
 
 toggleWindow = windowElement => {
   if (windowElement.classList.contains('offWindow')) {
@@ -194,6 +197,7 @@ btnShowContact.addEventListener('click', () => toggleWindow(contactWindow));
 btnShowRecycleBin.addEventListener('click', () => toggleWindow(recycleBin));
 btnShowDrawings.addEventListener('click', () => toggleWindow(drawingWindow));
 btnShowCars.addEventListener('click', () => toggleWindow(carsWindow));
+btnShowNotepad.addEventListener('click', () => toggleWindow(notepadWindow));
 
 
 
@@ -479,7 +483,63 @@ document.addEventListener("DOMContentLoaded", function() {
 
   reloadBtn.addEventListener("click", function () {
       console.log("Reload button clicked");
-      // Perform any additional actions or reload the page here
+      
       location.reload();
   });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const textArea = document.getElementById('text-area');
+  const fontSizeSelect = document.getElementById('font-size');
+  const fontFamilySelect = document.getElementById('font-family');
+  const boldButton = document.getElementById('bold-button');
+  const downloadButton = document.getElementById('download-button');
+
+  
+  textArea.value = localStorage.getItem('notepad_text') || '';
+  textArea.style.fontSize = localStorage.getItem('font_size') || '16px';
+  textArea.style.fontFamily = localStorage.getItem('font_family') || 'Arial';
+  textArea.style.fontWeight = localStorage.getItem('font_weight') || 'normal';
+
+  
+  textArea.addEventListener('input', updateLocalStorage);
+  fontSizeSelect.addEventListener('change', updateFontSize);
+  fontFamilySelect.addEventListener('change', updateFontFamily);
+  boldButton.addEventListener('click', toggleBold);
+  downloadButton.addEventListener('click', downloadText);
+
+  function updateLocalStorage() {
+      localStorage.setItem('notepad_text', textArea.value);
+  }
+
+  function updateFontSize() {
+      const selectedSize = fontSizeSelect.value;
+      textArea.style.fontSize = selectedSize;
+      localStorage.setItem('font_size', selectedSize);
+  }
+
+  function updateFontFamily() {
+      const selectedFont = fontFamilySelect.value;
+      textArea.style.fontFamily = selectedFont;
+      localStorage.setItem('font_family', selectedFont);
+  }
+
+  function toggleBold() {
+      const currentWeight = textArea.style.fontWeight;
+      const newWeight = currentWeight === 'bold' ? 'normal' : 'bold';
+      textArea.style.fontWeight = newWeight;
+      localStorage.setItem('font_weight', newWeight);
+      boldButton.style.backgroundColor = newWeight === 'bold' ? 'white' : 'rgb(203, 200, 200)';
+  }
+
+  function downloadText() {
+      const textToDownload = textArea.value;
+      const blob = new Blob([textToDownload], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'notepad_content.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+  }
 });
