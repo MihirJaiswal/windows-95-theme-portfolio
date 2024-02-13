@@ -24,7 +24,7 @@ body {
     border-right:130px solid transparent; /* Set a color for the border */
     border-top:20px solid transparent; /* Set a color for the border */
     border-bottom:20px solid transparent; /* Set a color for the border */
-    border-image-source: url(assets/img/retrocomp.jpg);
+    border-image-source: url(/assets/img/retrocomp.jpg);
     border-image-slice: 107; /* Adjust the value as needed */
     border-image-outset: 0;
     border-image-width: 130px;
@@ -44,7 +44,7 @@ body {
 }
 .monitor{
     border:10px solid;
-    border-image: url(assets/img/retro-computer-technology-with-monitor-hardware.jpg);
+    border-image: url(/assets/img/retro-computer-technology-with-monitor-hardware.jpg);
     border-image-slice: 400;
     border-image-outset: 0;
     border-image-width: 50rem;

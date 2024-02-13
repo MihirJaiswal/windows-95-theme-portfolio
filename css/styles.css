@@ -41,7 +41,7 @@ body {
 }
 
 #preloader{
-    background: #000 url(assets/img/7rF7.gif);
+    background: #000 url(/assets/img/7rF7.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;
@@ -54,7 +54,7 @@ body {
     left: 0
 }
 #shutDown{
-    background: #050505 url(assets/img/shuttingDown.gif);
+    background: #050505 url(/assets/img/shuttingDown.gif);
     background-repeat: no-repeat;
     display: none;
     background-position: center;
@@ -82,7 +82,7 @@ body {
 }
 
 #overlay-black{
-    background: url(assets/img/logofondo-windows.svg);
+    background: url(/assets/img/logofondo-windows.svg);
     background-repeat: no-repeat;
     background-position: center;
      width: 100%;
@@ -101,7 +101,7 @@ body {
     position: fixed;
     top: 0;
     left: 0%;
-    background-image: url(assets/img/bg.png);
+    background-image: url(/assets/img/bg.png);
     background-blend-mode: multiply;
     z-index: 9999;  
     pointer-events: none;  
@@ -152,7 +152,7 @@ button {
     color: #000;
 }
 .start-button {
-    background-image: url(assets/img/start-button.png);
+    background-image: url(/assets/img/start-button.png);
     width: 55px;
     height: 25px;
     background-repeat: no-repeat;
@@ -802,6 +802,8 @@ button {
     width: auto;
     height: auto;
     position: absolute; 
+    top: 0px;
+    left: 0px;
     resize: none;
     overflow: auto;
     background-color: #c6c6c6;
