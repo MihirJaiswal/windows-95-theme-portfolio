@@ -2,7 +2,7 @@
 
 Welcome to my portfolio website! This project is a nostalgic journey back to the era of Windows 95, with a modern twist. Explore my work, play games, view my drawings, and much more!
 
-![Screenshot 2024-07-23 110853](https://github.com/user-attachments/assets/8f4cfed0-919a-4fa5-b9ab-a2cca5cb4a16)
+![Screenshot 2024-07-23 121627](https://github.com/user-attachments/assets/93a93ebb-aad3-4256-bcd2-c6f3ba0259bc)
 
 ## Features
 
